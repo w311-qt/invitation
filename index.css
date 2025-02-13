@@ -410,4 +410,39 @@ body {
         font-size: 14px;
     }
 }
+    /* Скрываем элемент */
+.hidden {
+    display: none;
+}
+
+/* Стили для кнопки программы */
+.program-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.program-link {
+    font-weight: 800;
+    font-style: normal;
+    transition: all 0.1s linear;
+    background-color: transparent;
+    border: solid 2px #FF6863;
+    border-radius: 4px;
+    color: #FF6863;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 20px;
+    padding: 10px;
+    line-height: 2em;
+    text-decoration: none;
+    min-width: 150px;
+    outline: none;
+}
+
+.program-link:hover {
+    background-color: #FF6863;
+    cursor: pointer;
+    color: white;
+}
 }

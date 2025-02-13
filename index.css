@@ -330,4 +330,84 @@ body {
         font-size: 10px;
         padding: 6px;
     }
+    /* Основные стили для программы */
+.program-wrapper {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffc3da;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.program-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(20, 20, 20);
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.program-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+.event {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #FF6863;
+}
+
+.event:last-child {
+    border-bottom: none;
+}
+
+.event-time {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FF6863;
+    font-size: 24px;
+    margin: 0;
+}
+
+.event-description {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(20, 20, 20);
+    font-size: 18px;
+    margin: 5px 0 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .program-title {
+        font-size: 40px;
+    }
+
+    .event-time {
+        font-size: 20px;
+    }
+
+    .event-description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .program-title {
+        font-size: 30px;
+    }
+
+    .event-time {
+        font-size: 18px;
+    }
+
+    .event-description {
+        font-size: 14px;
+    }
+}
 }

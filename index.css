@@ -445,4 +445,15 @@ body {
     cursor: pointer;
     color: white;
 }
+    /* Стили для картинки */
+.program-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.program-image img {
+    max-width: 100%; /* Картинка будет адаптироваться под размер экрана */
+    height: auto; /* Сохраняем пропорции */
+    border-radius: 10px; /* Закругляем углы */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Добавляем тень */
 }

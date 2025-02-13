@@ -1,9 +1,19 @@
 body {
     background-color: #ffc3da;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .envelope-wrapper {
     height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #envelope {
@@ -12,9 +22,6 @@ body {
     width: 280px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
-    margin-left: auto;
-    margin-right: auto;
-    top: 50%;
     background-color: #FF6863;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
@@ -200,6 +207,7 @@ body {
 
 .reset {
     text-align: center;
+    margin-top: 20px;
 }
 
 .reset button {
@@ -213,8 +221,7 @@ body {
     display: inline-block;
     font-size: 14px;
     text-transform: uppercase;
-    margin: 20px;
-    margin-top: 100px;
+    margin: 10px;
     padding: 10px;
     line-height: 2em;
     text-decoration: none;
@@ -231,7 +238,96 @@ body {
 .valentine {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(20, 20, 20);
+    color: rgb(20, 20, 20);
     font-size: 70px;
-    margin: 150px;
+    margin: 50px 20px;
+}
+
+/* Медиазапросы для адаптивности */
+@media (max-width: 768px) {
+    .envelope-wrapper {
+        height: 300px;
+    }
+
+    #envelope {
+        width: 200px;
+        height: 120px;
+    }
+
+    .flap {
+        border-top: 70px solid #FF6863;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 60px solid transparent;
+    }
+
+    .pocket {
+        border-left: 100px solid #FF8BA0;
+        border-right: 100px solid #FF8BA0;
+        border-bottom: 60px solid #FFA8B5;
+    }
+
+    .letter {
+        width: 85%;
+        height: 90%;
+    }
+
+    .words {
+        font-size: 12px;
+    }
+
+    .valentine {
+        font-size: 40px;
+        margin: 30px 10px;
+    }
+
+    .reset button {
+        min-width: 120px;
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .envelope-wrapper {
+        height: 250px;
+    }
+
+    #envelope {
+        width: 150px;
+        height: 90px;
+    }
+
+    .flap {
+        border-top: 50px solid #FF6863;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        border-bottom: 40px solid transparent;
+    }
+
+    .pocket {
+        border-left: 75px solid #FF8BA0;
+        border-right: 75px solid #FF8BA0;
+        border-bottom: 40px solid #FFA8B5;
+    }
+
+    .letter {
+        width: 80%;
+        height: 85%;
+    }
+
+    .words {
+        font-size: 10px;
+    }
+
+    .valentine {
+        font-size: 30px;
+        margin: 20px 10px;
+    }
+
+    .reset button {
+        min-width: 100px;
+        font-size: 10px;
+        padding: 6px;
+    }
 }
